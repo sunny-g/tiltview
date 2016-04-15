@@ -1,0 +1,1064 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'i',
+1 verbose cli   '--save',
+1 verbose cli   'react-player' ]
+2 info using npm@2.15.1
+3 info using node@v4.4.3
+4 verbose install initial load of /Users/student/tilt2/package.json
+5 warn package.json tilt2@1.0.0 No description
+6 warn package.json tilt2@1.0.0 No repository field.
+7 warn package.json tilt2@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/babel-cli/package.json
+9 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/babel-preset-es2015/package.json
+10 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/babel-preset-react/package.json
+11 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/jquery/package.json
+12 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/lodash/package.json
+13 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/mediaelement/package.json
+14 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/react/package.json
+15 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/react-dom/package.json
+16 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/react-player/package.json
+17 verbose installManyTop reading scoped package data from /Users/student/tilt2/node_modules/react-youtube/package.json
+18 verbose readDependencies loading dependencies from /Users/student/tilt2/package.json
+19 verbose install react-player is installed as 0.5.6
+20 silly cache add args [ 'react-player', null ]
+21 verbose cache add spec react-player
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'react-player',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'react-player',
+22 silly cache add   rawSpec: '',
+22 silly cache add   spec: 'latest',
+22 silly cache add   type: 'tag' }
+23 silly addNamed react-player@latest
+24 verbose addNamed "latest" is being treated as a dist-tag for react-player
+25 info addNameTag [ 'react-player', 'latest' ]
+26 silly mapToRegistry name react-player
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'react-player',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   name: 'react-player',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/react-player
+31 verbose addNameTag registry:https://registry.npmjs.org/react-player not in flight; fetching
+32 verbose request uri https://registry.npmjs.org/react-player
+33 verbose request no auth needed
+34 info attempt registry request try #1 at 4:34:23 PM
+35 verbose request id 9cbf0528a0a5ac19
+36 verbose etag "9VXYSCD01QT10CIM758SIWXRT"
+37 http request GET https://registry.npmjs.org/react-player
+38 http 304 https://registry.npmjs.org/react-player
+39 verbose headers { date: 'Fri, 15 Apr 2016 23:34:23 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   etag: '"9VXYSCD01QT10CIM758SIWXRT"',
+39 verbose headers   age: '67',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+39 verbose headers   'x-cache': 'HIT',
+39 verbose headers   'x-cache-hits': '1',
+39 verbose headers   'x-timer': 'S1460763263.965018,VS0,VE0',
+39 verbose headers   vary: 'Accept-Encoding' }
+40 silly get cb [ 304,
+40 silly get   { date: 'Fri, 15 Apr 2016 23:34:23 GMT',
+40 silly get     via: '1.1 varnish',
+40 silly get     'cache-control': 'max-age=300',
+40 silly get     etag: '"9VXYSCD01QT10CIM758SIWXRT"',
+40 silly get     age: '67',
+40 silly get     connection: 'keep-alive',
+40 silly get     'x-served-by': 'cache-dfw1824-DFW',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '1',
+40 silly get     'x-timer': 'S1460763263.965018,VS0,VE0',
+40 silly get     vary: 'Accept-Encoding' } ]
+41 verbose etag https://registry.npmjs.org/react-player from cache
+42 verbose get saving react-player to /Users/student/.npm/registry.npmjs.org/react-player/.cache.json
+43 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+44 silly addNameTag next cb for react-player with tag latest
+45 silly addNamed react-player@0.5.6
+46 verbose addNamed "0.5.6" is a plain semver version for react-player
+47 silly cache afterAdd react-player@0.5.6
+48 verbose afterAdd /Users/student/.npm/react-player/0.5.6/package/package.json not in flight; writing
+49 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+50 verbose afterAdd /Users/student/.npm/react-player/0.5.6/package/package.json written
+51 silly install resolved [ { name: 'react-player',
+51 silly install resolved     version: '0.5.6',
+51 silly install resolved     description: 'A react component for playing a variety of URLs, including file paths, YouTube, SoundCloud and Vimeo',
+51 silly install resolved     main: 'lib/ReactPlayer.js',
+51 silly install resolved     scripts:
+51 silly install resolved      { clean: 'rimraf lib demo dist',
+51 silly install resolved        'build:webpack': 'NODE_ENV=production webpack --config webpack.config.prod.js',
+51 silly install resolved        'build:browser': 'NODE_ENV=production webpack --config webpack.config.browser.js',
+51 silly install resolved        'build:demo': 'npm run clean && npm run build:webpack && cp index.html demo',
+51 silly install resolved        'build:compile': 'NODE_ENV=production babel src -d lib --ignore src/demo',
+51 silly install resolved        start: 'node server.js',
+51 silly install resolved        lint: 'standard --verbose | snazzy',
+51 silly install resolved        'test:mocha': 'NODE_ENV=production mocha --require ignore-styles test/mocha --compilers js:babel-core/register',
+51 silly install resolved        'test:karma': 'karma start test/karma.config.js',
+51 silly install resolved        test: 'npm run test:mocha && npm run test:karma',
+51 silly install resolved        preversion: 'npm run lint && npm run test',
+51 silly install resolved        version: 'npm run update-changelog && npm run build:browser && git add CHANGELOG.md dist',
+51 silly install resolved        'update-changelog': 'auto-changelog --package --template compact',
+51 silly install resolved        prepublish: 'npm run build:compile; npm run build:browser',
+51 silly install resolved        postpublish: 'npm run clean' },
+51 silly install resolved     repository:
+51 silly install resolved      { type: 'git',
+51 silly install resolved        url: 'git+https://github.com/CookPete/react-player.git' },
+51 silly install resolved     keywords:
+51 silly install resolved      [ 'react',
+51 silly install resolved        'media',
+51 silly install resolved        'player',
+51 silly install resolved        'video',
+51 silly install resolved        'audio',
+51 silly install resolved        'youtube',
+51 silly install resolved        'soundcloud',
+51 silly install resolved        'vimeo',
+51 silly install resolved        'react-component' ],
+51 silly install resolved     author:
+51 silly install resolved      { name: 'Pete Cook',
+51 silly install resolved        email: 'pete@cookpete.com',
+51 silly install resolved        url: 'http://github.com/cookpete' },
+51 silly install resolved     license: 'CC0-1.0',
+51 silly install resolved     bugs: { url: 'https://github.com/CookPete/react-player/issues' },
+51 silly install resolved     homepage: 'https://github.com/CookPete/react-player',
+51 silly install resolved     peerDependencies: { react: '^0.14.0' },
+51 silly install resolved     devDependencies:
+51 silly install resolved      { 'auto-changelog': '^0.3.0',
+51 silly install resolved        'babel-cli': '^6.3.17',
+51 silly install resolved        'babel-core': '^6.3.17',
+51 silly install resolved        'babel-eslint': '^5.0.0-beta6',
+51 silly install resolved        'babel-loader': '^6.2.0',
+51 silly install resolved        'babel-plugin-add-module-exports': '^0.1.2',
+51 silly install resolved        'babel-preset-es2015': '^6.3.13',
+51 silly install resolved        'babel-preset-react': '^6.3.13',
+51 silly install resolved        'babel-preset-react-hmre': '^1.0.1',
+51 silly install resolved        'babel-preset-stage-0': '^6.3.13',
+51 silly install resolved        chai: '^3.4.1',
+51 silly install resolved        'css-loader': '^0.23.0',
+51 silly install resolved        'exports-loader': '^0.6.2',
+51 silly install resolved        express: '^4.13.3',
+51 silly install resolved        'extract-text-webpack-plugin': '^1.0.1',
+51 silly install resolved        'ignore-styles': '^1.1.0',
+51 silly install resolved        'imports-loader': '^0.6.4',
+51 silly install resolved        karma: '^0.13.16',
+51 silly install resolved        'karma-chai': '^0.1.0',
+51 silly install resolved        'karma-chrome-launcher': '^0.2.2',
+51 silly install resolved        'karma-cli': '^0.1.2',
+51 silly install resolved        'karma-firefox-launcher': '^0.1.7',
+51 silly install resolved        'karma-mocha': '^0.2.1',
+51 silly install resolved        'karma-mocha-reporter': '^2.0.0',
+51 silly install resolved        'karma-sourcemap-loader': '^0.3.6',
+51 silly install resolved        'karma-webpack': '^1.7.0',
+51 silly install resolved        mocha: '^2.3.4',
+51 silly install resolved        'node-sass': '^3.4.2',
+51 silly install resolved        'normalize.css': '^3.0.3',
+51 silly install resolved        react: '^0.14.0',
+51 silly install resolved        'react-addons-test-utils': '^0.14.3',
+51 silly install resolved        'react-dom': '^0.14.0',
+51 silly install resolved        rimraf: '^2.4.4',
+51 silly install resolved        'sass-loader': '^3.1.2',
+51 silly install resolved        snazzy: '^3.0.0',
+51 silly install resolved        standard: '^6.0.4',
+51 silly install resolved        'style-loader': '^0.13.0',
+51 silly install resolved        webpack: '^1.12.9',
+51 silly install resolved        'webpack-dev-middleware': '^1.4.0',
+51 silly install resolved        'webpack-hot-middleware': '^2.6.0' },
+51 silly install resolved     dependencies:
+51 silly install resolved      { 'es6-promise': '^3.1.2',
+51 silly install resolved        'load-script': '^1.0.0',
+51 silly install resolved        'query-string': '^3.0.0',
+51 silly install resolved        'whatwg-fetch': '^0.11.0' },
+51 silly install resolved     standard: { parser: 'babel-eslint', global: [Object] },
+51 silly install resolved     gitHead: '2dc7d45bed7ae46fbc383fa71ca8266dd53ebee0',
+51 silly install resolved     _id: 'react-player@0.5.6',
+51 silly install resolved     _shasum: '825c52fa20b9f92d1c2699e2d5d29b7fa19ebf15',
+51 silly install resolved     _from: 'react-player@latest',
+51 silly install resolved     _npmVersion: '3.6.0',
+51 silly install resolved     _nodeVersion: '5.6.0',
+51 silly install resolved     _npmUser: { name: 'cookpete', email: 'pete@cookpete.com' },
+51 silly install resolved     dist:
+51 silly install resolved      { shasum: '825c52fa20b9f92d1c2699e2d5d29b7fa19ebf15',
+51 silly install resolved        tarball: 'https://registry.npmjs.org/react-player/-/react-player-0.5.6.tgz' },
+51 silly install resolved     maintainers: [ [Object] ],
+51 silly install resolved     _npmOperationalInternal:
+51 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+51 silly install resolved        tmp: 'tmp/react-player-0.5.6.tgz_1457431380404_0.7992016396019608' },
+51 silly install resolved     directories: {},
+51 silly install resolved     _resolved: 'https://registry.npmjs.org/react-player/-/react-player-0.5.6.tgz',
+51 silly install resolved     readme: 'ERROR: No README data found!' } ]
+52 info install react-player@0.5.6 into /Users/student/tilt2
+53 info installOne react-player@0.5.6
+54 verbose installOne of react-player to /Users/student/tilt2 not in flight; installing
+55 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+56 verbose lock using /Users/student/.npm/_locks/react-player-e351d82b46503d61.lock for /Users/student/tilt2/node_modules/react-player
+57 silly install write writing react-player 0.5.6 to /Users/student/tilt2/node_modules/react-player
+58 verbose unbuild node_modules/react-player
+59 info preuninstall react-player@0.5.6
+60 info uninstall react-player@0.5.6
+61 verbose unbuild rmStuff react-player@0.5.6 from /Users/student/tilt2/node_modules
+62 info postuninstall react-player@0.5.6
+63 silly gentlyRm /Users/student/tilt2/node_modules/react-player is being purged from base /Users/student/tilt2
+64 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player
+65 silly vacuum-fs purging /Users/student/tilt2/node_modules/react-player
+66 silly vacuum-fs quitting because other entries in /Users/student/tilt2/node_modules
+67 verbose tar unpack /Users/student/.npm/react-player/0.5.6/package.tgz
+68 verbose tar unpacking to /Users/student/tilt2/node_modules/react-player
+69 silly gentlyRm /Users/student/tilt2/node_modules/react-player is being purged
+70 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player
+71 silly gunzTarPerm modes [ '755', '644' ]
+72 silly gunzTarPerm extractEntry package.json
+73 silly gunzTarPerm extractEntry .npmignore
+74 silly gunzTarPerm extractEntry README.md
+75 silly gunzTarPerm extractEntry LICENSE
+76 silly gunzTarPerm extractEntry bower.json
+77 silly gunzTarPerm extractEntry dist/ReactPlayer.js
+78 silly gunzTarPerm extractEntry dist/ReactPlayer.js.map
+79 silly gunzTarPerm extractEntry .babelrc
+80 silly gunzTarPerm extractEntry lib/ReactPlayer.js
+81 silly gunzTarPerm extractEntry lib/props.js
+82 silly gunzTarPerm extractEntry lib/utils.js
+83 silly gunzTarPerm extractEntry lib/players/Base.js
+84 silly gunzTarPerm extractEntry lib/players/FilePlayer.js
+85 silly gunzTarPerm extractEntry lib/players/SoundCloud.js
+86 silly gunzTarPerm extractEntry lib/players/Vimeo.js
+87 silly gunzTarPerm extractEntry lib/players/YouTube.js
+88 silly gunzTarPerm extractEntry lib/players/index.js
+89 silly gunzTarPerm extractEntry .travis.yml
+90 silly gunzTarPerm extractEntry CHANGELOG.md
+91 silly gunzTarPerm extractEntry index.html
+92 verbose write writing to /Users/student/tilt2/node_modules/react-player/package.json
+93 info preinstall react-player@0.5.6
+94 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/package.json
+95 silly prepareForInstallMany adding es6-promise@^3.1.2 from react-player dependencies
+96 silly prepareForInstallMany adding load-script@^1.0.0 from react-player dependencies
+97 silly prepareForInstallMany adding query-string@^3.0.0 from react-player dependencies
+98 silly prepareForInstallMany adding whatwg-fetch@^0.11.0 from react-player dependencies
+99 silly prepareForInstallMany adding react@^0.14.0 from react-player peerDependencies
+100 warn peerDependencies The peer dependency react@^0.14.0 included from react-player will no
+101 warn peerDependencies longer be automatically installed to fulfill the peerDependency
+102 warn peerDependencies in npm 3+. Your application will need to depend on it explicitly.
+103 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/package.json
+104 silly cache add args [ 'load-script@^1.0.0', null ]
+105 verbose cache add spec load-script@^1.0.0
+106 silly cache add parsed spec Result {
+106 silly cache add   raw: 'load-script@^1.0.0',
+106 silly cache add   scope: null,
+106 silly cache add   name: 'load-script',
+106 silly cache add   rawSpec: '^1.0.0',
+106 silly cache add   spec: '>=1.0.0 <2.0.0',
+106 silly cache add   type: 'range' }
+107 silly addNamed load-script@>=1.0.0 <2.0.0
+108 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for load-script
+109 silly addNameRange { name: 'load-script', range: '>=1.0.0 <2.0.0', hasData: false }
+110 silly mapToRegistry name load-script
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry data Result {
+113 silly mapToRegistry   raw: 'load-script',
+113 silly mapToRegistry   scope: null,
+113 silly mapToRegistry   name: 'load-script',
+113 silly mapToRegistry   rawSpec: '',
+113 silly mapToRegistry   spec: 'latest',
+113 silly mapToRegistry   type: 'tag' }
+114 silly mapToRegistry uri https://registry.npmjs.org/load-script
+115 verbose addNameRange registry:https://registry.npmjs.org/load-script not in flight; fetching
+116 silly cache add args [ 'query-string@^3.0.0', null ]
+117 verbose cache add spec query-string@^3.0.0
+118 silly cache add parsed spec Result {
+118 silly cache add   raw: 'query-string@^3.0.0',
+118 silly cache add   scope: null,
+118 silly cache add   name: 'query-string',
+118 silly cache add   rawSpec: '^3.0.0',
+118 silly cache add   spec: '>=3.0.0 <4.0.0',
+118 silly cache add   type: 'range' }
+119 silly addNamed query-string@>=3.0.0 <4.0.0
+120 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for query-string
+121 silly addNameRange { name: 'query-string', range: '>=3.0.0 <4.0.0', hasData: false }
+122 silly mapToRegistry name query-string
+123 silly mapToRegistry using default registry
+124 silly mapToRegistry registry https://registry.npmjs.org/
+125 silly mapToRegistry data Result {
+125 silly mapToRegistry   raw: 'query-string',
+125 silly mapToRegistry   scope: null,
+125 silly mapToRegistry   name: 'query-string',
+125 silly mapToRegistry   rawSpec: '',
+125 silly mapToRegistry   spec: 'latest',
+125 silly mapToRegistry   type: 'tag' }
+126 silly mapToRegistry uri https://registry.npmjs.org/query-string
+127 verbose addNameRange registry:https://registry.npmjs.org/query-string not in flight; fetching
+128 silly cache add args [ 'whatwg-fetch@^0.11.0', null ]
+129 verbose cache add spec whatwg-fetch@^0.11.0
+130 silly cache add parsed spec Result {
+130 silly cache add   raw: 'whatwg-fetch@^0.11.0',
+130 silly cache add   scope: null,
+130 silly cache add   name: 'whatwg-fetch',
+130 silly cache add   rawSpec: '^0.11.0',
+130 silly cache add   spec: '>=0.11.0 <0.12.0',
+130 silly cache add   type: 'range' }
+131 silly addNamed whatwg-fetch@>=0.11.0 <0.12.0
+132 verbose addNamed ">=0.11.0 <0.12.0" is a valid semver range for whatwg-fetch
+133 silly addNameRange { name: 'whatwg-fetch',
+133 silly addNameRange   range: '>=0.11.0 <0.12.0',
+133 silly addNameRange   hasData: false }
+134 silly mapToRegistry name whatwg-fetch
+135 silly mapToRegistry using default registry
+136 silly mapToRegistry registry https://registry.npmjs.org/
+137 silly mapToRegistry data Result {
+137 silly mapToRegistry   raw: 'whatwg-fetch',
+137 silly mapToRegistry   scope: null,
+137 silly mapToRegistry   name: 'whatwg-fetch',
+137 silly mapToRegistry   rawSpec: '',
+137 silly mapToRegistry   spec: 'latest',
+137 silly mapToRegistry   type: 'tag' }
+138 silly mapToRegistry uri https://registry.npmjs.org/whatwg-fetch
+139 verbose addNameRange registry:https://registry.npmjs.org/whatwg-fetch not in flight; fetching
+140 silly cache add args [ 'es6-promise@^3.1.2', null ]
+141 verbose cache add spec es6-promise@^3.1.2
+142 silly cache add parsed spec Result {
+142 silly cache add   raw: 'es6-promise@^3.1.2',
+142 silly cache add   scope: null,
+142 silly cache add   name: 'es6-promise',
+142 silly cache add   rawSpec: '^3.1.2',
+142 silly cache add   spec: '>=3.1.2 <4.0.0',
+142 silly cache add   type: 'range' }
+143 silly addNamed es6-promise@>=3.1.2 <4.0.0
+144 verbose addNamed ">=3.1.2 <4.0.0" is a valid semver range for es6-promise
+145 silly addNameRange { name: 'es6-promise', range: '>=3.1.2 <4.0.0', hasData: false }
+146 silly mapToRegistry name es6-promise
+147 silly mapToRegistry using default registry
+148 silly mapToRegistry registry https://registry.npmjs.org/
+149 silly mapToRegistry data Result {
+149 silly mapToRegistry   raw: 'es6-promise',
+149 silly mapToRegistry   scope: null,
+149 silly mapToRegistry   name: 'es6-promise',
+149 silly mapToRegistry   rawSpec: '',
+149 silly mapToRegistry   spec: 'latest',
+149 silly mapToRegistry   type: 'tag' }
+150 silly mapToRegistry uri https://registry.npmjs.org/es6-promise
+151 verbose addNameRange registry:https://registry.npmjs.org/es6-promise not in flight; fetching
+152 verbose request uri https://registry.npmjs.org/load-script
+153 verbose request no auth needed
+154 info attempt registry request try #1 at 4:34:25 PM
+155 verbose etag "8MCI83QQGJXEGP99GRKCNGCSB"
+156 http request GET https://registry.npmjs.org/load-script
+157 verbose request uri https://registry.npmjs.org/es6-promise
+158 verbose request no auth needed
+159 info attempt registry request try #1 at 4:34:25 PM
+160 verbose etag "A7ZV0JE0EAJ3ZRGH3UQODIHTU"
+161 http request GET https://registry.npmjs.org/es6-promise
+162 verbose request uri https://registry.npmjs.org/query-string
+163 verbose request no auth needed
+164 info attempt registry request try #1 at 4:34:25 PM
+165 verbose etag "BGBUM8DGPZL501182N968BZ0C"
+166 http request GET https://registry.npmjs.org/query-string
+167 http 304 https://registry.npmjs.org/load-script
+168 verbose headers { date: 'Fri, 15 Apr 2016 23:34:25 GMT',
+168 verbose headers   via: '1.1 varnish',
+168 verbose headers   'cache-control': 'max-age=300',
+168 verbose headers   etag: '"8MCI83QQGJXEGP99GRKCNGCSB"',
+168 verbose headers   age: '277',
+168 verbose headers   connection: 'keep-alive',
+168 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+168 verbose headers   'x-cache': 'HIT',
+168 verbose headers   'x-cache-hits': '1',
+168 verbose headers   'x-timer': 'S1460763265.982569,VS0,VE0',
+168 verbose headers   vary: 'Accept-Encoding' }
+169 silly get cb [ 304,
+169 silly get   { date: 'Fri, 15 Apr 2016 23:34:25 GMT',
+169 silly get     via: '1.1 varnish',
+169 silly get     'cache-control': 'max-age=300',
+169 silly get     etag: '"8MCI83QQGJXEGP99GRKCNGCSB"',
+169 silly get     age: '277',
+169 silly get     connection: 'keep-alive',
+169 silly get     'x-served-by': 'cache-dfw1824-DFW',
+169 silly get     'x-cache': 'HIT',
+169 silly get     'x-cache-hits': '1',
+169 silly get     'x-timer': 'S1460763265.982569,VS0,VE0',
+169 silly get     vary: 'Accept-Encoding' } ]
+170 verbose etag https://registry.npmjs.org/load-script from cache
+171 verbose get saving load-script to /Users/student/.npm/registry.npmjs.org/load-script/.cache.json
+172 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+173 verbose request uri https://registry.npmjs.org/whatwg-fetch
+174 verbose request no auth needed
+175 info attempt registry request try #1 at 4:34:25 PM
+176 verbose etag "56VKPX55E9FTYGN5Q94Y0FH0D"
+177 http request GET https://registry.npmjs.org/whatwg-fetch
+178 http 304 https://registry.npmjs.org/whatwg-fetch
+179 verbose headers { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+179 verbose headers   via: '1.1 varnish',
+179 verbose headers   'cache-control': 'max-age=300',
+179 verbose headers   etag: '"56VKPX55E9FTYGN5Q94Y0FH0D"',
+179 verbose headers   age: '125',
+179 verbose headers   connection: 'keep-alive',
+179 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+179 verbose headers   'x-cache': 'HIT',
+179 verbose headers   'x-cache-hits': '2',
+179 verbose headers   'x-timer': 'S1460763266.066144,VS0,VE0',
+179 verbose headers   vary: 'Accept-Encoding' }
+180 silly get cb [ 304,
+180 silly get   { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+180 silly get     via: '1.1 varnish',
+180 silly get     'cache-control': 'max-age=300',
+180 silly get     etag: '"56VKPX55E9FTYGN5Q94Y0FH0D"',
+180 silly get     age: '125',
+180 silly get     connection: 'keep-alive',
+180 silly get     'x-served-by': 'cache-dfw1824-DFW',
+180 silly get     'x-cache': 'HIT',
+180 silly get     'x-cache-hits': '2',
+180 silly get     'x-timer': 'S1460763266.066144,VS0,VE0',
+180 silly get     vary: 'Accept-Encoding' } ]
+181 verbose etag https://registry.npmjs.org/whatwg-fetch from cache
+182 verbose get saving whatwg-fetch to /Users/student/.npm/registry.npmjs.org/whatwg-fetch/.cache.json
+183 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+184 silly addNameRange number 2 { name: 'load-script', range: '>=1.0.0 <2.0.0', hasData: true }
+185 silly addNameRange versions [ 'load-script',
+185 silly addNameRange   [ '0.0.2', '0.0.3', '0.0.4', '0.0.5', '1.0.0' ] ]
+186 silly addNamed load-script@1.0.0
+187 verbose addNamed "1.0.0" is a plain semver version for load-script
+188 silly addNameRange number 2 { name: 'whatwg-fetch',
+188 silly addNameRange   range: '>=0.11.0 <0.12.0',
+188 silly addNameRange   hasData: true }
+189 silly addNameRange versions [ 'whatwg-fetch',
+189 silly addNameRange   [ '0.5.0',
+189 silly addNameRange     '0.6.0',
+189 silly addNameRange     '0.6.1',
+189 silly addNameRange     '0.7.0',
+189 silly addNameRange     '0.8.0',
+189 silly addNameRange     '0.8.1',
+189 silly addNameRange     '0.8.2',
+189 silly addNameRange     '0.9.0',
+189 silly addNameRange     '0.10.0',
+189 silly addNameRange     '0.10.1',
+189 silly addNameRange     '0.11.0' ] ]
+190 silly addNamed whatwg-fetch@0.11.0
+191 verbose addNamed "0.11.0" is a plain semver version for whatwg-fetch
+192 http 304 https://registry.npmjs.org/es6-promise
+193 verbose headers { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+193 verbose headers   via: '1.1 varnish',
+193 verbose headers   'cache-control': 'max-age=300',
+193 verbose headers   etag: '"A7ZV0JE0EAJ3ZRGH3UQODIHTU"',
+193 verbose headers   age: '139',
+193 verbose headers   connection: 'keep-alive',
+193 verbose headers   'x-served-by': 'cache-dfw1832-DFW',
+193 verbose headers   'x-cache': 'HIT',
+193 verbose headers   'x-cache-hits': '3',
+193 verbose headers   'x-timer': 'S1460763266.077781,VS0,VE0',
+193 verbose headers   vary: 'Accept-Encoding' }
+194 silly get cb [ 304,
+194 silly get   { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+194 silly get     via: '1.1 varnish',
+194 silly get     'cache-control': 'max-age=300',
+194 silly get     etag: '"A7ZV0JE0EAJ3ZRGH3UQODIHTU"',
+194 silly get     age: '139',
+194 silly get     connection: 'keep-alive',
+194 silly get     'x-served-by': 'cache-dfw1832-DFW',
+194 silly get     'x-cache': 'HIT',
+194 silly get     'x-cache-hits': '3',
+194 silly get     'x-timer': 'S1460763266.077781,VS0,VE0',
+194 silly get     vary: 'Accept-Encoding' } ]
+195 verbose etag https://registry.npmjs.org/es6-promise from cache
+196 verbose get saving es6-promise to /Users/student/.npm/registry.npmjs.org/es6-promise/.cache.json
+197 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+198 http 304 https://registry.npmjs.org/query-string
+199 verbose headers { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+199 verbose headers   via: '1.1 varnish',
+199 verbose headers   'cache-control': 'max-age=300',
+199 verbose headers   etag: '"BGBUM8DGPZL501182N968BZ0C"',
+199 verbose headers   age: '280',
+199 verbose headers   connection: 'keep-alive',
+199 verbose headers   'x-served-by': 'cache-dfw1820-DFW',
+199 verbose headers   'x-cache': 'HIT',
+199 verbose headers   'x-cache-hits': '1',
+199 verbose headers   'x-timer': 'S1460763266.077404,VS0,VE0',
+199 verbose headers   vary: 'Accept-Encoding' }
+200 silly get cb [ 304,
+200 silly get   { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+200 silly get     via: '1.1 varnish',
+200 silly get     'cache-control': 'max-age=300',
+200 silly get     etag: '"BGBUM8DGPZL501182N968BZ0C"',
+200 silly get     age: '280',
+200 silly get     connection: 'keep-alive',
+200 silly get     'x-served-by': 'cache-dfw1820-DFW',
+200 silly get     'x-cache': 'HIT',
+200 silly get     'x-cache-hits': '1',
+200 silly get     'x-timer': 'S1460763266.077404,VS0,VE0',
+200 silly get     vary: 'Accept-Encoding' } ]
+201 verbose etag https://registry.npmjs.org/query-string from cache
+202 verbose get saving query-string to /Users/student/.npm/registry.npmjs.org/query-string/.cache.json
+203 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+204 silly cache afterAdd whatwg-fetch@0.11.0
+205 verbose afterAdd /Users/student/.npm/whatwg-fetch/0.11.0/package/package.json not in flight; writing
+206 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+207 silly cache afterAdd load-script@1.0.0
+208 verbose afterAdd /Users/student/.npm/load-script/1.0.0/package/package.json not in flight; writing
+209 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+210 silly addNameRange number 2 { name: 'query-string', range: '>=3.0.0 <4.0.0', hasData: true }
+211 silly addNameRange versions [ 'query-string',
+211 silly addNameRange   [ '0.1.0',
+211 silly addNameRange     '0.1.1',
+211 silly addNameRange     '0.2.0',
+211 silly addNameRange     '0.3.0',
+211 silly addNameRange     '0.3.1',
+211 silly addNameRange     '0.4.0',
+211 silly addNameRange     '0.4.1',
+211 silly addNameRange     '1.0.0',
+211 silly addNameRange     '1.0.1',
+211 silly addNameRange     '2.0.0',
+211 silly addNameRange     '2.1.0',
+211 silly addNameRange     '2.2.0',
+211 silly addNameRange     '2.3.0',
+211 silly addNameRange     '2.4.0',
+211 silly addNameRange     '2.4.1',
+211 silly addNameRange     '2.4.2',
+211 silly addNameRange     '3.0.0',
+211 silly addNameRange     '3.0.1',
+211 silly addNameRange     '3.0.2',
+211 silly addNameRange     '3.0.3',
+211 silly addNameRange     '4.0.0',
+211 silly addNameRange     '4.0.2',
+211 silly addNameRange     '4.1.0' ] ]
+212 silly addNamed query-string@3.0.3
+213 verbose addNamed "3.0.3" is a plain semver version for query-string
+214 verbose afterAdd /Users/student/.npm/whatwg-fetch/0.11.0/package/package.json written
+215 silly addNameRange number 2 { name: 'es6-promise', range: '>=3.1.2 <4.0.0', hasData: true }
+216 silly addNameRange versions [ 'es6-promise',
+216 silly addNameRange   [ '0.1.0',
+216 silly addNameRange     '0.1.1',
+216 silly addNameRange     '0.1.2',
+216 silly addNameRange     '1.0.0',
+216 silly addNameRange     '2.0.0',
+216 silly addNameRange     '2.0.1',
+216 silly addNameRange     '2.1.0',
+216 silly addNameRange     '2.1.1',
+216 silly addNameRange     '2.2.0',
+216 silly addNameRange     '2.3.0',
+216 silly addNameRange     '3.0.0',
+216 silly addNameRange     '3.0.1',
+216 silly addNameRange     '3.0.2',
+216 silly addNameRange     '3.1.2' ] ]
+217 silly addNamed es6-promise@3.1.2
+218 verbose addNamed "3.1.2" is a plain semver version for es6-promise
+219 verbose afterAdd /Users/student/.npm/load-script/1.0.0/package/package.json written
+220 silly cache afterAdd query-string@3.0.3
+221 verbose afterAdd /Users/student/.npm/query-string/3.0.3/package/package.json not in flight; writing
+222 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+223 silly cache afterAdd es6-promise@3.1.2
+224 verbose afterAdd /Users/student/.npm/es6-promise/3.1.2/package/package.json not in flight; writing
+225 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+226 verbose afterAdd /Users/student/.npm/query-string/3.0.3/package/package.json written
+227 verbose afterAdd /Users/student/.npm/es6-promise/3.1.2/package/package.json written
+228 silly install resolved [ { name: 'whatwg-fetch',
+228 silly install resolved     description: 'A window.fetch polyfill.',
+228 silly install resolved     version: '0.11.0',
+228 silly install resolved     main: 'fetch.js',
+228 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/github/fetch.git' },
+228 silly install resolved     licenses: [ [Object] ],
+228 silly install resolved     devDependencies:
+228 silly install resolved      { bower: '1.3.8',
+228 silly install resolved        chai: '1.10.0',
+228 silly install resolved        jshint: '2.8.0',
+228 silly install resolved        'mocha-phantomjs': '3.5.2',
+228 silly install resolved        mocha: '2.1.0',
+228 silly install resolved        phantomjs: '1.9.19' },
+228 silly install resolved     files: [ 'LICENSE', 'fetch.js' ],
+228 silly install resolved     gitHead: '989a1e8132e9adb4c4e973875ad043ff7219fc5a',
+228 silly install resolved     bugs: { url: 'https://github.com/github/fetch/issues' },
+228 silly install resolved     homepage: 'https://github.com/github/fetch#readme',
+228 silly install resolved     _id: 'whatwg-fetch@0.11.0',
+228 silly install resolved     scripts: {},
+228 silly install resolved     _shasum: '46b1d18d0aa99955971ef1a2f5aac506add28815',
+228 silly install resolved     _from: 'whatwg-fetch@>=0.11.0 <0.12.0',
+228 silly install resolved     _npmVersion: '3.3.12',
+228 silly install resolved     _nodeVersion: '5.4.0',
+228 silly install resolved     _npmUser: { name: 'mislav', email: 'mislav.marohnic@gmail.com' },
+228 silly install resolved     dist:
+228 silly install resolved      { shasum: '46b1d18d0aa99955971ef1a2f5aac506add28815',
+228 silly install resolved        tarball: 'https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-0.11.0.tgz' },
+228 silly install resolved     maintainers: [ [Object], [Object] ],
+228 silly install resolved     directories: {},
+228 silly install resolved     _resolved: 'https://registry.npmjs.org/whatwg-fetch/-/whatwg-fetch-0.11.0.tgz',
+228 silly install resolved     readme: 'ERROR: No README data found!' },
+228 silly install resolved   { name: 'load-script',
+228 silly install resolved     description: 'Dynamic script loading for browser',
+228 silly install resolved     version: '1.0.0',
+228 silly install resolved     keywords: [ 'browser', 'script', 'load' ],
+228 silly install resolved     repository:
+228 silly install resolved      { type: 'git',
+228 silly install resolved        url: 'git://github.com/eldargab/load-script.git' },
+228 silly install resolved     scripts:
+228 silly install resolved      { test: 'zuul -- test/index.js',
+228 silly install resolved        'test-local': 'zuul --local 9005 -- test/index.js' },
+228 silly install resolved     devDependencies: { zuul: '~2.1.0' },
+228 silly install resolved     license: 'MIT',
+228 silly install resolved     gitHead: '09f6c1002c3bc48e8ab3027ad42260228b5dd0db',
+228 silly install resolved     bugs: { url: 'https://github.com/eldargab/load-script/issues' },
+228 silly install resolved     homepage: 'https://github.com/eldargab/load-script',
+228 silly install resolved     _id: 'load-script@1.0.0',
+228 silly install resolved     _shasum: '0491939e0bee5643ee494a7e3da3d2bac70c6ca4',
+228 silly install resolved     _from: 'load-script@>=1.0.0 <2.0.0',
+228 silly install resolved     _npmVersion: '2.6.1',
+228 silly install resolved     _nodeVersion: '0.10.35',
+228 silly install resolved     _npmUser: { name: 'shtylman', email: 'shtylman@gmail.com' },
+228 silly install resolved     maintainers: [ [Object], [Object] ],
+228 silly install resolved     dist:
+228 silly install resolved      { shasum: '0491939e0bee5643ee494a7e3da3d2bac70c6ca4',
+228 silly install resolved        tarball: 'https://registry.npmjs.org/load-script/-/load-script-1.0.0.tgz' },
+228 silly install resolved     directories: {},
+228 silly install resolved     _resolved: 'https://registry.npmjs.org/load-script/-/load-script-1.0.0.tgz',
+228 silly install resolved     readme: 'ERROR: No README data found!' },
+228 silly install resolved   { name: 'query-string',
+228 silly install resolved     version: '3.0.3',
+228 silly install resolved     description: 'Parse and stringify URL query strings',
+228 silly install resolved     license: 'MIT',
+228 silly install resolved     repository:
+228 silly install resolved      { type: 'git',
+228 silly install resolved        url: 'git+https://github.com/sindresorhus/query-string.git' },
+228 silly install resolved     author:
+228 silly install resolved      { name: 'Sindre Sorhus',
+228 silly install resolved        email: 'sindresorhus@gmail.com',
+228 silly install resolved        url: 'sindresorhus.com' },
+228 silly install resolved     engines: { node: '>=0.10.0' },
+228 silly install resolved     scripts: { test: 'xo && ava' },
+228 silly install resolved     files: [ 'index.js' ],
+228 silly install resolved     keywords:
+228 silly install resolved      [ 'browser',
+228 silly install resolved        'querystring',
+228 silly install resolved        'query',
+228 silly install resolved        'string',
+228 silly install resolved        'qs',
+228 silly install resolved        'param',
+228 silly install resolved        'parameter',
+228 silly install resolved        'url',
+228 silly install resolved        'uri',
+228 silly install resolved        'parse',
+228 silly install resolved        'stringify',
+228 silly install resolved        'encode',
+228 silly install resolved        'decode' ],
+228 silly install resolved     dependencies: { 'strict-uri-encode': '^1.0.0' },
+228 silly install resolved     devDependencies: { ava: '*', xo: '*' },
+228 silly install resolved     gitHead: '71bc3ed002a25def027174da9f3651b6d3c26db4',
+228 silly install resolved     bugs: { url: 'https://github.com/sindresorhus/query-string/issues' },
+228 silly install resolved     homepage: 'https://github.com/sindresorhus/query-string#readme',
+228 silly install resolved     _id: 'query-string@3.0.3',
+228 silly install resolved     _shasum: 'ae2e14b4d05071d4e9b9eb4873c35b0dcd42e638',
+228 silly install resolved     _from: 'query-string@>=3.0.0 <4.0.0',
+228 silly install resolved     _npmVersion: '3.8.2',
+228 silly install resolved     _nodeVersion: '4.3.0',
+228 silly install resolved     _npmUser: { name: 'sindresorhus', email: 'sindresorhus@gmail.com' },
+228 silly install resolved     dist:
+228 silly install resolved      { shasum: 'ae2e14b4d05071d4e9b9eb4873c35b0dcd42e638',
+228 silly install resolved        tarball: 'https://registry.npmjs.org/query-string/-/query-string-3.0.3.tgz' },
+228 silly install resolved     maintainers: [ [Object] ],
+228 silly install resolved     _npmOperationalInternal:
+228 silly install resolved      { host: 'packages-13-west.internal.npmjs.com',
+228 silly install resolved        tmp: 'tmp/query-string-3.0.3.tgz_1458385547492_0.6452929894439876' },
+228 silly install resolved     directories: {},
+228 silly install resolved     _resolved: 'https://registry.npmjs.org/query-string/-/query-string-3.0.3.tgz',
+228 silly install resolved     readme: 'ERROR: No README data found!' },
+228 silly install resolved   { name: 'es6-promise',
+228 silly install resolved     namespace: 'es6-promise',
+228 silly install resolved     version: '3.1.2',
+228 silly install resolved     description: 'A lightweight library that provides tools for organizing asynchronous code',
+228 silly install resolved     main: 'dist/es6-promise.js',
+228 silly install resolved     directories: { lib: 'lib' },
+228 silly install resolved     files: [ 'dist', 'lib', '!dist/test' ],
+228 silly install resolved     devDependencies:
+228 silly install resolved      { brfs: '0.0.8',
+228 silly install resolved        'broccoli-es6-module-transpiler': '^0.5.0',
+228 silly install resolved        'broccoli-jshint': '^1.1.1',
+228 silly install resolved        'broccoli-merge-trees': '^1.1.1',
+228 silly install resolved        'broccoli-replace': '^0.2.0',
+228 silly install resolved        'broccoli-stew': '^1.2.0',
+228 silly install resolved        'broccoli-uglify-js': '^0.1.3',
+228 silly install resolved        'broccoli-watchify': '^0.2.0',
+228 silly install resolved        'ember-cli': '2.3.0-beta.1',
+228 silly install resolved        'ember-publisher': '0.0.7',
+228 silly install resolved        'git-repo-version': '0.0.3',
+228 silly install resolved        json3: '^3.3.2',
+228 silly install resolved        mocha: '^1.20.1',
+228 silly install resolved        'promises-aplus-tests-phantom': '^2.1.0-revise',
+228 silly install resolved        'release-it': '0.0.10' },
+228 silly install resolved     scripts:
+228 silly install resolved      { build: 'ember build',
+228 silly install resolved        'build:production': 'ember build --environment production',
+228 silly install resolved        start: 'ember s',
+228 silly install resolved        test: 'ember test',
+228 silly install resolved        'test:server': 'ember test --server',
+228 silly install resolved        'test:node': 'ember build && mocha ./dist/test/browserify',
+228 silly install resolved        lint: 'jshint lib',
+228 silly install resolved        prepublish: 'ember build --environment production',
+228 silly install resolved        'dry-run-release': 'ember build --environment production && release-it --dry-run --non-interactive' },
+228 silly install resolved     repository:
+228 silly install resolved      { type: 'git',
+228 silly install resolved        url: 'git://github.com/jakearchibald/ES6-Promises.git' },
+228 silly install resolved     bugs: { url: 'https://github.com/jakearchibald/ES6-Promises/issues' },
+228 silly install resolved     browser: { vertx: false },
+228 silly install resolved     keywords: [ 'promises', 'futures' ],
+228 silly install resolved     author:
+228 silly install resolved      { name: 'Yehuda Katz, Tom Dale, Stefan Penner and contributors',
+228 silly install resolved        url: 'Conversion to ES6 API by Jake Archibald' },
+228 silly install resolved     license: 'MIT',
+228 silly install resolved     spm: { main: 'dist/es6-promise.js' },
+228 silly install resolved     gitHead: '4a0062ee0725bb2c992de2c9636fe97c666794d1',
+228 silly install resolved     homepage: 'https://github.com/jakearchibald/ES6-Promises#readme',
+228 silly install resolved     _id: 'es6-promise@3.1.2',
+228 silly install resolved     _shasum: '795e25ceb47f7babb263d151afbedd92d18e6a07',
+228 silly install resolved     _from: 'es6-promise@>=3.1.2 <4.0.0',
+228 silly install resolved     _npmVersion: '3.5.3',
+228 silly install resolved     _nodeVersion: '5.4.1',
+228 silly install resolved     _npmUser: { name: 'stefanpenner', email: 'stefan.penner@gmail.com' },
+228 silly install resolved     dist:
+228 silly install resolved      { shasum: '795e25ceb47f7babb263d151afbedd92d18e6a07',
+228 silly install resolved        tarball: 'http://registry.npmjs.org/es6-promise/-/es6-promise-3.1.2.tgz' },
+228 silly install resolved     maintainers: [ [Object], [Object] ],
+228 silly install resolved     _npmOperationalInternal:
+228 silly install resolved      { host: 'packages-5-east.internal.npmjs.com',
+228 silly install resolved        tmp: 'tmp/es6-promise-3.1.2.tgz_1455383156542_0.32691872608847916' },
+228 silly install resolved     _resolved: 'https://registry.npmjs.org/es6-promise/-/es6-promise-3.1.2.tgz',
+228 silly install resolved     readme: 'ERROR: No README data found!' } ]
+229 info install whatwg-fetch@0.11.0 into /Users/student/tilt2/node_modules/react-player
+230 info install load-script@1.0.0 into /Users/student/tilt2/node_modules/react-player
+231 info install query-string@3.0.3 into /Users/student/tilt2/node_modules/react-player
+232 info install es6-promise@3.1.2 into /Users/student/tilt2/node_modules/react-player
+233 info installOne whatwg-fetch@0.11.0
+234 verbose installOne of whatwg-fetch to /Users/student/tilt2/node_modules/react-player not in flight; installing
+235 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+236 info installOne load-script@1.0.0
+237 verbose installOne of load-script to /Users/student/tilt2/node_modules/react-player not in flight; installing
+238 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+239 info installOne query-string@3.0.3
+240 verbose installOne of query-string to /Users/student/tilt2/node_modules/react-player not in flight; installing
+241 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+242 info installOne es6-promise@3.1.2
+243 verbose installOne of es6-promise to /Users/student/tilt2/node_modules/react-player not in flight; installing
+244 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+245 verbose lock using /Users/student/.npm/_locks/whatwg-fetch-6ba82455de026ef8.lock for /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+246 verbose lock using /Users/student/.npm/_locks/query-string-25de9aa27919c306.lock for /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+247 silly install write writing whatwg-fetch 0.11.0 to /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+248 silly install write writing query-string 3.0.3 to /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+249 verbose lock using /Users/student/.npm/_locks/load-script-75cd6bce364783b5.lock for /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+250 verbose lock using /Users/student/.npm/_locks/es6-promise-44327d4fba9bd83c.lock for /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+251 silly install write writing load-script 1.0.0 to /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+252 silly install write writing es6-promise 3.1.2 to /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+253 verbose unbuild node_modules/react-player/node_modules/whatwg-fetch
+254 verbose unbuild node_modules/react-player/node_modules/load-script
+255 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch is being purged from base /Users/student/tilt2
+256 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+257 verbose tar unpack /Users/student/.npm/whatwg-fetch/0.11.0/package.tgz
+258 verbose tar unpacking to /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+259 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch is being purged
+260 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+261 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/load-script is being purged from base /Users/student/tilt2
+262 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+263 silly gunzTarPerm modes [ '755', '644' ]
+264 verbose tar unpack /Users/student/.npm/load-script/1.0.0/package.tgz
+265 verbose tar unpacking to /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+266 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/load-script is being purged
+267 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+268 silly gunzTarPerm modes [ '755', '644' ]
+269 silly gunzTarPerm extractEntry package.json
+270 silly gunzTarPerm extractEntry package.json
+271 silly gunzTarPerm extractEntry README.md
+272 silly gunzTarPerm extractEntry LICENSE
+273 silly gunzTarPerm extractEntry .npmignore
+274 silly gunzTarPerm extractEntry index.js
+275 silly gunzTarPerm extractEntry fetch.js
+276 silly gunzTarPerm extractEntry .zuul.yml
+277 silly gunzTarPerm extractEntry Makefile
+278 silly gunzTarPerm extractEntry Readme.md
+279 silly gunzTarPerm extractEntry component.json
+280 verbose unbuild node_modules/react-player/node_modules/es6-promise
+281 verbose unbuild node_modules/react-player/node_modules/query-string
+282 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise is being purged from base /Users/student/tilt2
+283 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+284 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/query-string is being purged from base /Users/student/tilt2
+285 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+286 verbose tar unpack /Users/student/.npm/es6-promise/3.1.2/package.tgz
+287 verbose tar unpacking to /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+288 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise is being purged
+289 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+290 verbose tar unpack /Users/student/.npm/query-string/3.0.3/package.tgz
+291 verbose tar unpacking to /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+292 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/query-string is being purged
+293 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+294 silly gunzTarPerm modes [ '755', '644' ]
+295 silly gunzTarPerm modes [ '755', '644' ]
+296 silly gunzTarPerm extractEntry test/hello.js
+297 silly gunzTarPerm extractEntry test/index.js
+298 silly gunzTarPerm extractEntry package.json
+299 silly gunzTarPerm extractEntry package.json
+300 silly gunzTarPerm extractEntry index.js
+301 silly gunzTarPerm extractEntry license
+302 silly gunzTarPerm extractEntry README.md
+303 silly gunzTarPerm extractEntry LICENSE
+304 silly gunzTarPerm extractEntry test/throw.js
+305 silly gunzTarPerm extractEntry readme.md
+306 silly gunzTarPerm extractEntry CHANGELOG.md
+307 verbose write writing to /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch/package.json
+308 info preinstall whatwg-fetch@0.11.0
+309 silly gunzTarPerm extractEntry dist/es6-promise.js
+310 silly gunzTarPerm extractEntry dist/es6-promise.min.js
+311 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch/package.json
+312 silly gunzTarPerm extractEntry lib/es6-promise.umd.js
+313 silly gunzTarPerm extractEntry lib/es6-promise/-internal.js
+314 silly gunzTarPerm extractEntry lib/es6-promise/asap.js
+315 silly gunzTarPerm extractEntry lib/es6-promise/enumerator.js
+316 silly gunzTarPerm extractEntry lib/es6-promise/polyfill.js
+317 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch/package.json
+318 silly gunzTarPerm extractEntry lib/es6-promise/promise.js
+319 verbose write writing to /Users/student/tilt2/node_modules/react-player/node_modules/query-string/package.json
+320 silly install resolved []
+321 verbose about to build /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+322 info build /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+323 info preinstall query-string@3.0.3
+324 info linkStuff whatwg-fetch@0.11.0
+325 silly linkStuff whatwg-fetch@0.11.0 has /Users/student/tilt2/node_modules/react-player/node_modules as its parent node_modules
+326 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/query-string/package.json
+327 silly gunzTarPerm extractEntry lib/es6-promise/then.js
+328 silly gunzTarPerm extractEntry lib/es6-promise/utils.js
+329 verbose linkBins whatwg-fetch@0.11.0
+330 verbose linkMans whatwg-fetch@0.11.0
+331 verbose rebuildBundles whatwg-fetch@0.11.0
+332 silly prepareForInstallMany adding strict-uri-encode@^1.0.0 from query-string dependencies
+333 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/query-string/package.json
+334 info install whatwg-fetch@0.11.0
+335 silly gunzTarPerm extractEntry lib/es6-promise/promise/all.js
+336 silly gunzTarPerm extractEntry lib/es6-promise/promise/race.js
+337 info postinstall whatwg-fetch@0.11.0
+338 verbose unlock done using /Users/student/.npm/_locks/whatwg-fetch-6ba82455de026ef8.lock for /Users/student/tilt2/node_modules/react-player/node_modules/whatwg-fetch
+339 silly cache add args [ 'strict-uri-encode@^1.0.0', null ]
+340 verbose cache add spec strict-uri-encode@^1.0.0
+341 silly cache add parsed spec Result {
+341 silly cache add   raw: 'strict-uri-encode@^1.0.0',
+341 silly cache add   scope: null,
+341 silly cache add   name: 'strict-uri-encode',
+341 silly cache add   rawSpec: '^1.0.0',
+341 silly cache add   spec: '>=1.0.0 <2.0.0',
+341 silly cache add   type: 'range' }
+342 silly addNamed strict-uri-encode@>=1.0.0 <2.0.0
+343 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for strict-uri-encode
+344 silly addNameRange { name: 'strict-uri-encode',
+344 silly addNameRange   range: '>=1.0.0 <2.0.0',
+344 silly addNameRange   hasData: false }
+345 silly mapToRegistry name strict-uri-encode
+346 silly mapToRegistry using default registry
+347 silly mapToRegistry registry https://registry.npmjs.org/
+348 silly mapToRegistry data Result {
+348 silly mapToRegistry   raw: 'strict-uri-encode',
+348 silly mapToRegistry   scope: null,
+348 silly mapToRegistry   name: 'strict-uri-encode',
+348 silly mapToRegistry   rawSpec: '',
+348 silly mapToRegistry   spec: 'latest',
+348 silly mapToRegistry   type: 'tag' }
+349 silly mapToRegistry uri https://registry.npmjs.org/strict-uri-encode
+350 verbose addNameRange registry:https://registry.npmjs.org/strict-uri-encode not in flight; fetching
+351 verbose write writing to /Users/student/tilt2/node_modules/react-player/node_modules/load-script/package.json
+352 silly gunzTarPerm extractEntry lib/es6-promise/promise/reject.js
+353 silly gunzTarPerm extractEntry lib/es6-promise/promise/resolve.js
+354 info preinstall load-script@1.0.0
+355 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/load-script/package.json
+356 verbose request uri https://registry.npmjs.org/strict-uri-encode
+357 verbose request no auth needed
+358 info attempt registry request try #1 at 4:34:26 PM
+359 verbose etag "C6VMNOWIKOIB7BAA09JAIKXK3"
+360 http request GET https://registry.npmjs.org/strict-uri-encode
+361 http 304 https://registry.npmjs.org/strict-uri-encode
+362 verbose headers { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+362 verbose headers   via: '1.1 varnish',
+362 verbose headers   'cache-control': 'max-age=300',
+362 verbose headers   etag: '"C6VMNOWIKOIB7BAA09JAIKXK3"',
+362 verbose headers   age: '199',
+362 verbose headers   connection: 'keep-alive',
+362 verbose headers   'x-served-by': 'cache-dfw1824-DFW',
+362 verbose headers   'x-cache': 'HIT',
+362 verbose headers   'x-cache-hits': '2',
+362 verbose headers   'x-timer': 'S1460763266.970957,VS0,VE0',
+362 verbose headers   vary: 'Accept-Encoding' }
+363 silly get cb [ 304,
+363 silly get   { date: 'Fri, 15 Apr 2016 23:34:26 GMT',
+363 silly get     via: '1.1 varnish',
+363 silly get     'cache-control': 'max-age=300',
+363 silly get     etag: '"C6VMNOWIKOIB7BAA09JAIKXK3"',
+363 silly get     age: '199',
+363 silly get     connection: 'keep-alive',
+363 silly get     'x-served-by': 'cache-dfw1824-DFW',
+363 silly get     'x-cache': 'HIT',
+363 silly get     'x-cache-hits': '2',
+363 silly get     'x-timer': 'S1460763266.970957,VS0,VE0',
+363 silly get     vary: 'Accept-Encoding' } ]
+364 verbose etag https://registry.npmjs.org/strict-uri-encode from cache
+365 verbose get saving strict-uri-encode to /Users/student/.npm/registry.npmjs.org/strict-uri-encode/.cache.json
+366 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+367 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/load-script/package.json
+368 silly install resolved []
+369 verbose about to build /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+370 info build /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+371 info linkStuff load-script@1.0.0
+372 silly linkStuff load-script@1.0.0 has /Users/student/tilt2/node_modules/react-player/node_modules as its parent node_modules
+373 silly addNameRange number 2 { name: 'strict-uri-encode',
+373 silly addNameRange   range: '>=1.0.0 <2.0.0',
+373 silly addNameRange   hasData: true }
+374 silly addNameRange versions [ 'strict-uri-encode', [ '1.0.0', '1.0.1', '1.0.2', '1.1.0' ] ]
+375 silly addNamed strict-uri-encode@1.1.0
+376 verbose addNamed "1.1.0" is a plain semver version for strict-uri-encode
+377 verbose linkBins load-script@1.0.0
+378 verbose linkMans load-script@1.0.0
+379 verbose rebuildBundles load-script@1.0.0
+380 info install load-script@1.0.0
+381 info postinstall load-script@1.0.0
+382 silly cache afterAdd strict-uri-encode@1.1.0
+383 verbose afterAdd /Users/student/.npm/strict-uri-encode/1.1.0/package/package.json not in flight; writing
+384 verbose correctMkdir /Users/student/.npm correctMkdir not in flight; initializing
+385 verbose unlock done using /Users/student/.npm/_locks/load-script-75cd6bce364783b5.lock for /Users/student/tilt2/node_modules/react-player/node_modules/load-script
+386 verbose afterAdd /Users/student/.npm/strict-uri-encode/1.1.0/package/package.json written
+387 silly install resolved [ { name: 'strict-uri-encode',
+387 silly install resolved     version: '1.1.0',
+387 silly install resolved     description: 'A stricter URI encode adhering to RFC 3986',
+387 silly install resolved     license: 'MIT',
+387 silly install resolved     repository:
+387 silly install resolved      { type: 'git',
+387 silly install resolved        url: 'git+https://github.com/kevva/strict-uri-encode.git' },
+387 silly install resolved     author:
+387 silly install resolved      { name: 'Kevin Mårtensson',
+387 silly install resolved        email: 'kevinmartensson@gmail.com',
+387 silly install resolved        url: 'github.com/kevva' },
+387 silly install resolved     engines: { node: '>=0.10.0' },
+387 silly install resolved     scripts: { test: 'node test.js' },
+387 silly install resolved     files: [ 'index.js' ],
+387 silly install resolved     keywords: [ 'component', 'encode', 'RFC3986', 'uri' ],
+387 silly install resolved     devDependencies: { ava: '^0.0.4' },
+387 silly install resolved     gitHead: 'ce6681428485d30e29222c722f832df15e3c19ac',
+387 silly install resolved     bugs: { url: 'https://github.com/kevva/strict-uri-encode/issues' },
+387 silly install resolved     homepage: 'https://github.com/kevva/strict-uri-encode#readme',
+387 silly install resolved     _id: 'strict-uri-encode@1.1.0',
+387 silly install resolved     _shasum: '279b225df1d582b1f54e65addd4352e18faa0713',
+387 silly install resolved     _from: 'strict-uri-encode@>=1.0.0 <2.0.0',
+387 silly install resolved     _npmVersion: '3.5.3',
+387 silly install resolved     _nodeVersion: '5.3.0',
+387 silly install resolved     _npmUser: { name: 'kevva', email: 'kevinmartensson@gmail.com' },
+387 silly install resolved     dist:
+387 silly install resolved      { shasum: '279b225df1d582b1f54e65addd4352e18faa0713',
+387 silly install resolved        tarball: 'https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz' },
+387 silly install resolved     maintainers: [ [Object] ],
+387 silly install resolved     directories: {},
+387 silly install resolved     _resolved: 'https://registry.npmjs.org/strict-uri-encode/-/strict-uri-encode-1.1.0.tgz',
+387 silly install resolved     readme: 'ERROR: No README data found!' } ]
+388 info install strict-uri-encode@1.1.0 into /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+389 info installOne strict-uri-encode@1.1.0
+390 verbose installOne of strict-uri-encode to /Users/student/tilt2/node_modules/react-player/node_modules/query-string not in flight; installing
+391 verbose correctMkdir /Users/student/.npm/_locks correctMkdir not in flight; initializing
+392 verbose lock using /Users/student/.npm/_locks/strict-uri-encode-f3e123550fa01f0c.lock for /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+393 silly install write writing strict-uri-encode 1.1.0 to /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+394 verbose unbuild node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+395 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode is being purged from base /Users/student/tilt2
+396 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+397 verbose tar unpack /Users/student/.npm/strict-uri-encode/1.1.0/package.tgz
+398 verbose tar unpacking to /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+399 silly gentlyRm /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode is being purged
+400 verbose gentlyRm don't care about contents; nuking /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+401 silly gunzTarPerm modes [ '755', '644' ]
+402 silly gunzTarPerm extractEntry package.json
+403 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+404 silly gunzTarPerm extractEntry index.js
+405 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+406 silly gunzTarPerm extractEntry license
+407 silly gunzTarPerm modified mode [ 'license', 436, 420 ]
+408 silly gunzTarPerm extractEntry readme.md
+409 silly gunzTarPerm modified mode [ 'readme.md', 436, 420 ]
+410 verbose write writing to /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode/package.json
+411 info preinstall strict-uri-encode@1.1.0
+412 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode/package.json
+413 verbose write writing to /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise/package.json
+414 info preinstall es6-promise@3.1.2
+415 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise/package.json
+416 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode/package.json
+417 verbose readDependencies loading dependencies from /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise/package.json
+418 silly install resolved []
+419 verbose about to build /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+420 info build /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+421 silly install resolved []
+422 verbose about to build /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+423 info build /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+424 info linkStuff strict-uri-encode@1.1.0
+425 silly linkStuff strict-uri-encode@1.1.0 has /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules as its parent node_modules
+426 info linkStuff es6-promise@3.1.2
+427 silly linkStuff es6-promise@3.1.2 has /Users/student/tilt2/node_modules/react-player/node_modules as its parent node_modules
+428 verbose linkBins strict-uri-encode@1.1.0
+429 verbose linkMans strict-uri-encode@1.1.0
+430 verbose rebuildBundles strict-uri-encode@1.1.0
+431 verbose linkBins es6-promise@3.1.2
+432 verbose linkMans es6-promise@3.1.2
+433 verbose rebuildBundles es6-promise@3.1.2
+434 info install strict-uri-encode@1.1.0
+435 info install es6-promise@3.1.2
+436 info postinstall strict-uri-encode@1.1.0
+437 info postinstall es6-promise@3.1.2
+438 verbose unlock done using /Users/student/.npm/_locks/strict-uri-encode-f3e123550fa01f0c.lock for /Users/student/tilt2/node_modules/react-player/node_modules/query-string/node_modules/strict-uri-encode
+439 verbose about to build /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+440 info build /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+441 verbose unlock done using /Users/student/.npm/_locks/es6-promise-44327d4fba9bd83c.lock for /Users/student/tilt2/node_modules/react-player/node_modules/es6-promise
+442 info linkStuff query-string@3.0.3
+443 silly linkStuff query-string@3.0.3 has /Users/student/tilt2/node_modules/react-player/node_modules as its parent node_modules
+444 verbose linkBins query-string@3.0.3
+445 verbose linkMans query-string@3.0.3
+446 verbose rebuildBundles query-string@3.0.3
+447 verbose rebuildBundles [ 'strict-uri-encode' ]
+448 info install query-string@3.0.3
+449 info postinstall query-string@3.0.3
+450 verbose unlock done using /Users/student/.npm/_locks/query-string-25de9aa27919c306.lock for /Users/student/tilt2/node_modules/react-player/node_modules/query-string
+451 verbose about to build /Users/student/tilt2/node_modules/react-player
+452 info build /Users/student/tilt2/node_modules/react-player
+453 info linkStuff react-player@0.5.6
+454 silly linkStuff react-player@0.5.6 has /Users/student/tilt2/node_modules as its parent node_modules
+455 verbose linkBins react-player@0.5.6
+456 verbose linkMans react-player@0.5.6
+457 verbose rebuildBundles react-player@0.5.6
+458 verbose rebuildBundles [ 'es6-promise', 'load-script', 'query-string', 'whatwg-fetch' ]
+459 info install react-player@0.5.6
+460 info postinstall react-player@0.5.6
+461 verbose readDependencies loading dependencies from /Users/student/tilt2/package.json
+462 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/babel-cli/package.json
+463 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/babel-preset-es2015/package.json
+464 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/babel-preset-react/package.json
+465 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/jquery/package.json
+466 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/lodash/package.json
+467 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/mediaelement/package.json
+468 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/react/package.json
+469 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/react-dom/package.json
+470 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/react-player/package.json
+471 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/react-youtube/package.json
+472 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/.bin/babel/package.json
+473 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/.bin/babel-doctor/package.json
+474 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/.bin/babel-external-helpers/package.json
+475 verbose targetResolver reading package data from /Users/student/tilt2/node_modules/.bin/babel-node/package.json
+476 verbose already installed skipping react@^0.14.0 /Users/student/tilt2
+477 silly install resolved []
+478 verbose unlock done using /Users/student/.npm/_locks/react-player-e351d82b46503d61.lock for /Users/student/tilt2/node_modules/react-player
+479 verbose validateInstall loading /Users/student/tilt2/package.json for validation
+480 verbose stack Error: The package react@15.0.1 does not satisfy its siblings' peerDependencies requirements!
+480 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+480 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+480 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+480 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+480 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+480 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+480 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+480 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+480 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+480 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+481 verbose cwd /Users/student/tilt2
+482 error Darwin 15.3.0
+483 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "i" "--save" "react-player"
+484 error node v4.4.3
+485 error npm  v2.15.1
+486 error code EPEERINVALID
+487 error peerinvalid The package react@15.0.1 does not satisfy its siblings' peerDependencies requirements!
+487 error peerinvalid Peer react-dom@15.0.1 wants react@^15.0.1
+487 error peerinvalid Peer react-youtube@6.1.0 wants react@>=0.14.1
+487 error peerinvalid Peer react-player@0.5.6 wants react@^0.14.0
+488 verbose exit [ 1, true ]
